@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro · Institución</title>
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">I</span>
+        <span class="text brand-name">Institución</span>
+      </div>
+
+      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
+
+      <nav class="nav">
+        <a href="../index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
+        <a href="estudiantes.html"><span class="icon">E</span><span class="text">Estudiantes</span></a>
+        <a href="docentes.html"><span class="icon">D</span><span class="text">Docentes</span></a>
+        <a href="matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
+        <a href="notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
+        <a href="asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
+        <a href="asignaciones.html"><span class="icon">A</span><span class="text">Asignaciones</span></a>
+        <a href="academico.html"><span class="icon">G</span><span class="text">Gestión académica</span></a>
+        <a href="conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
+      </nav>
+
+      <div class="bottom">
+        <a href="login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
+        <a href="register.html" class="nav-link active"><span class="icon">R</span><span class="text">Registrarse</span></a>
+        <a href="login.html" class="profile">
+          <span class="avatar">I</span>
+          <span class="text">
+            <strong>Invitado</strong><br>
+            <small>Login</small>
+          </span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main auth-main">
+      <section class="auth-box auth-wide">
+        <h1>Crear cuenta</h1>
+        <p class="subtitle">Completa tus datos para registrarte.</p>
+        <form class="form-grid" action="#" method="post">
+          <label>Nombre
+            <input type="text" name="nombre" placeholder="Juan">
+          </label>
+          <label>Apellidos
+            <input type="text" name="apellidos" placeholder="Pérez Gómez">
+          </label>
+          <label>Tipo de documento
+            <select name="tipo_documento">
+              <option>Cédula de ciudadanía</option>
+              <option>Tarjeta de identidad</option>
+              <option>Cédula de extranjería</option>
+            </select>
+          </label>
+          <label>Documento
+            <input type="text" name="documento" placeholder="1020304050">
+          </label>
+          <label>Fecha de nacimiento
+            <input type="date" name="fecha_nacimiento" placeholder="">
+          </label>
+          <label>Celular
+            <input type="tel" name="celular" placeholder="300 000 0000">
+          </label>
+          <label class="wide">Correo electrónico
+            <input type="email" name="email" placeholder="usuario@institucion.edu.co">
+          </label>
+          <label>Contraseña
+            <input type="password" name="contrasena" placeholder="Mínimo 8 caracteres">
+          </label>
+          <label>Confirmar contraseña
+            <input type="password" name="confirmar_contrasena" placeholder="Repite la contraseña">
+          </label>
+          <div class="wide"><a href="login.html" class="button button-full">Crear cuenta</a></div>
+        </form>
+        <p class="auth-link">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+      </section>
+
+    </main>
+  </div>
+
+
+</body>
+</html>

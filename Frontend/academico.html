@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestión académica · Institución</title>
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">I</span>
+        <span class="text brand-name">Institución</span>
+      </div>
+
+      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
+
+      <nav class="nav">
+        <a href="../index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
+        <a href="estudiantes.html"><span class="icon">E</span><span class="text">Estudiantes</span></a>
+        <a href="docentes.html"><span class="icon">D</span><span class="text">Docentes</span></a>
+        <a href="matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
+        <a href="notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
+        <a href="asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
+        <a href="asignaciones.html"><span class="icon">A</span><span class="text">Asignaciones</span></a>
+        <a href="academico.html" class="active"><span class="icon">G</span><span class="text">Gestión académica</span></a>
+        <a href="conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
+      </nav>
+
+      <div class="bottom">
+        <a href="login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
+        <a href="register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
+        <a href="login.html" class="profile">
+          <span class="avatar">I</span>
+          <span class="text">
+            <strong>Invitado</strong><br>
+            <small>Login</small>
+          </span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="page-head">
+        <h1>Gestión académica</h1>
+        <p class="subtitle">Configuración base que usan las matrículas y asignaciones.</p>
+      </header>
+      <section class="panel">
+        <h2>Grupos</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Nombre</th><th>Horario</th></tr></thead>
+            <tbody>
+            <tr><td>1</td><td>Grupo 10A</td><td>Mañana</td></tr>
+            <tr><td>2</td><td>Grupo 10B</td><td>Mañana</td></tr>
+            <tr><td>3</td><td>Grupo 11A</td><td>Tarde</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Nuevo grupo</h2>
+        <form class="form-grid" action="#" method="post">
+          <label>Nombre
+            <input type="text" name="nombre_grupo" placeholder="">
+          </label>
+          <label>Horario
+            <select name="horario">
+              <option>Mañana</option>
+              <option>Tarde</option>
+              <option>Noche</option>
+            </select>
+          </label>
+          <div class="wide"><button type="submit" class="button">Guardar grupo</button></div>
+        </form>
+      </section>
+      <section class="panel">
+        <h2>Asignaturas</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Nombre</th></tr></thead>
+            <tbody>
+            <tr><td>1</td><td>Matemáticas</td></tr>
+            <tr><td>2</td><td>Lengua castellana</td></tr>
+            <tr><td>3</td><td>Ciencias naturales</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Nueva asignatura</h2>
+        <form class="form-grid" action="#" method="post">
+          <label class="wide">Nombre
+            <input type="text" name="nombre_asignatura" placeholder="">
+          </label>
+          <div class="wide"><button type="submit" class="button">Guardar asignatura</button></div>
+        </form>
+      </section>
+      <section class="panel">
+        <h2>Periodos</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Nombre</th><th>Inicio</th><th>Fin</th></tr></thead>
+            <tbody>
+            <tr><td>1</td><td>2026-1</td><td>2026-01-20</td><td>2026-06-15</td></tr>
+            <tr><td>2</td><td>2026-2</td><td>2026-07-20</td><td>2026-11-30</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Nuevo periodo</h2>
+        <form class="form-grid" action="#" method="post">
+          <label>Nombre
+            <input type="text" name="nombre_periodo" placeholder="">
+          </label>
+          <label>Fecha de inicio
+            <input type="date" name="fecha_inicio" placeholder="">
+          </label>
+          <label>Fecha de fin
+            <input type="date" name="fecha_fin" placeholder="">
+          </label>
+          <div class="wide"><button type="submit" class="button">Guardar periodo</button></div>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+
+</body>
+</html>
