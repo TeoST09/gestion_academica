@@ -10,15 +10,15 @@ La entrega está enfocada en la **estructura semántica HTML y su presentación 
 ## Vistas
 
 - [Inicio](./index.html): presentación, indicadores y accesos rápidos.
-- Estudiantes: listado y formulario de datos personales y teléfonos.
-- Docentes: listado y formulario de contacto y especialidad.
-- Matrículas: relación visual entre estudiante y grupo.
-- Notas: consulta y registro de calificaciones.
-- Asistencia: consulta y registro de estados de asistencia.
-- Asignaciones: docente, asignatura, grupo, periodo y horario.
-- Gestión académica: grupos, asignaturas y periodos.
-- Conócenos: misión, visión y valores.
-- Inicio de sesión y registro: vistas de autenticación demostrativas.
+- [Estudiantes](./Frontend/estudiantes.html): listado y formulario de datos personales y teléfonos.
+- [Docentes](./Frontend/docentes.html): listado y formulario de contacto y especialidad.
+- [Matrículas](./Frontend/matriculas.html): relación visual entre estudiante y grupo.
+- [Notas](./Frontend/notas.html): consulta y registro de calificaciones.
+- [Asistencia](./Frontend/asistencia.html): consulta y registro de estados de asistencia.
+- [Asignaciones](./Frontend/asignaciones.html): docente, asignatura, grupo, periodo y horario.
+- [Gestión académica](./Frontend/academico.html): grupos, asignaturas y periodos.
+- [Conócenos](./Frontend/conocenos.html): misión, visión y valores.
+- [Inicio de sesión](./Frontend/login.html) y [registro](./Frontend/register.html): vistas de autenticación demostrativas.
 
 ## GitHub Pages
 
