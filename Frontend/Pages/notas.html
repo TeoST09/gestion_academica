@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Asistencia · Institución</title>
-  <link rel="stylesheet" href="Styles/style.css">
+  <title>Notas · Institución</title>
+  <link rel="stylesheet" href="../Styles/style.css">
 </head>
 <body>
 
@@ -19,21 +19,21 @@
       <input class="search" type="search" name="busqueda" placeholder="Buscar...">
 
       <nav class="nav">
-        <a href="../index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
+        <a href="../../index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
         <a href="estudiantes.html"><span class="icon">E</span><span class="text">Estudiantes</span></a>
         <a href="docentes.html"><span class="icon">D</span><span class="text">Docentes</span></a>
         <a href="matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
-        <a href="notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
-        <a href="asistencia.html" class="active"><span class="icon">A</span><span class="text">Asistencia</span></a>
+        <a href="notas.html" class="active"><span class="icon">N</span><span class="text">Notas</span></a>
+        <a href="asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
         <a href="asignaciones.html"><span class="icon">A</span><span class="text">Asignaciones</span></a>
         <a href="academico.html"><span class="icon">G</span><span class="text">Gestión académica</span></a>
         <a href="conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
       </nav>
 
       <div class="bottom">
-        <a href="login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
-        <a href="register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
-        <a href="login.html" class="profile">
+        <a href="../Auth/login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
+        <a href="../Auth/register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
+        <a href="../Auth/login.html" class="profile">
           <span class="avatar">I</span>
           <span class="text">
             <strong>Invitado</strong><br>
@@ -45,11 +45,11 @@
 
     <main class="main">
       <header class="page-head">
-        <h1>Asistencia</h1>
-        <p class="subtitle">Marca la asistencia de cada estudiante en su asignación.</p>
+        <h1>Notas</h1>
+        <p class="subtitle">Registra y consulta calificaciones por periodo, grupo y asignatura.</p>
       </header>
       <section class="panel">
-        <h2>Registro de asistencia</h2>
+        <h2>Calificaciones</h2>
         <form class="form-grid filters" action="#" method="get">
           <label>Periodo
             <select name="periodo">
@@ -76,18 +76,16 @@
         </form>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Fecha</th><th>Estudiante</th><th>Asignatura</th><th>Estado</th><th>Observación</th></tr></thead>
+            <thead><tr><th>Estudiante</th><th>Asignatura</th><th>Evaluación</th><th>Valor</th><th>Resultado</th></tr></thead>
             <tbody>
-            <tr><td>2026-03-02</td><td>Juan Pérez</td><td>Matemáticas</td><td><span class="badge ok">Presente</span></td><td>—</td></tr>
-            <tr><td>2026-03-02</td><td>María López</td><td>Matemáticas</td><td><span class="badge warn">Tarde</span></td><td>Llegó 10 min tarde</td></tr>
-            <tr><td>2026-03-02</td><td>Andrés Castaño</td><td>Matemáticas</td><td><span class="badge bad">Ausente</span></td><td>Sin justificación</td></tr>
-            <tr><td>2026-03-02</td><td>Sofía Mejía</td><td>Matemáticas</td><td><span class="badge warn">Excusa</span></td><td>Cita médica</td></tr>
+            <tr><td>Juan Pérez</td><td>Matemáticas</td><td>Parcial 1</td><td>4.5</td><td><span class="badge ok">Aprobado</span></td></tr>
+            <tr><td>María López</td><td>Matemáticas</td><td>Parcial 1</td><td>2.7</td><td><span class="badge bad">Reprobado</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
       <section class="panel">
-        <h2>Registrar asistencia</h2>
+        <h2>Registrar nota</h2>
         <form class="form-grid" action="#" method="post">
           <label>Estudiante (matrícula)
             <select name="matricula">
@@ -103,21 +101,19 @@
               <option>Inglés · Grupo 10A · Carlos Ríos</option>
             </select>
           </label>
-          <label>Fecha
-            <input type="date" name="fecha" placeholder="">
-          </label>
-          <label>Estado
-            <select name="estado">
-              <option>Presente</option>
-              <option>Ausente</option>
-              <option>Tarde</option>
-              <option>Excusa</option>
+          <label>Tipo de evaluación
+            <select name="tipo_evaluacion">
+              <option>Parcial</option>
+              <option>Taller</option>
+              <option>Quiz</option>
+              <option>Proyecto</option>
+              <option>Examen final</option>
             </select>
           </label>
-          <label class="wide">Observación
-            <textarea name="observacion" rows="3" placeholder="Opcional"></textarea>
+          <label>Valor (0.0 a 5.0)
+            <input type="number" name="valor" min="0" max="5" step="0.1" placeholder="4.0">
           </label>
-          <div class="wide"><button type="submit" class="button">Guardar asistencia</button></div>
+          <div class="wide"><button type="submit" class="button">Guardar nota</button></div>
         </form>
       </section>
 
