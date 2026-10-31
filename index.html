@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio · Institución</title>
+  <link rel="stylesheet" href="Frontend/Styles/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">I</span>
+        <span class="text brand-name">Institución</span>
+      </div>
+
+      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
+
+      <nav class="nav">
+        <a href="index.html" class="active"><span class="icon">I</span><span class="text">Inicio</span></a>
+        <a href="Frontend/Pages/estudiantes.html"><span class="icon">E</span><span class="text">Estudiantes</span></a>
+        <a href="Frontend/Pages/docentes.html"><span class="icon">D</span><span class="text">Docentes</span></a>
+        <a href="Frontend/Pages/matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
+        <a href="Frontend/Pages/notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
+        <a href="Frontend/Pages/asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
+        <a href="Frontend/Pages/asignaciones.html"><span class="icon">A</span><span class="text">Asignaciones</span></a>
+        <a href="Frontend/Pages/academico.html"><span class="icon">G</span><span class="text">Gestión académica</span></a>
+        <a href="Frontend/Pages/conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
+      </nav>
+
+      <div class="bottom">
+        <a href="Frontend/Auth/login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
+        <a href="Frontend/Auth/register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
+        <a href="Frontend/Auth/login.html" class="profile">
+          <span class="avatar">I</span>
+          <span class="text">
+            <strong>Invitado</strong><br>
+            <small>Login</small>
+          </span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main home-main">
+      <section id="inicio" class="hero">
+        <h1>Bienvenido a la Institución</h1>
+        <p class="subtitle">Consulta notas, asistencia y matrículas en un solo lugar. Una plataforma sencilla para estudiantes, docentes y administrativos.</p>
+        <a href="Frontend/Auth/login.html" class="button">Iniciar sesión</a>
+        <a href="Frontend/Auth/register.html" class="button button-light">Crear cuenta</a>
+      </section>
+
+      <section>
+        <div class="stats">
+          <div class="stat"><strong>1.250</strong><span>Estudiantes matriculados</span></div>
+          <div class="stat"><strong>64</strong><span>Docentes</span></div>
+          <div class="stat"><strong>32</strong><span>Grupos activos</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Accesos rápidos</h2>
+        <div class="cards">
+          <a href="Frontend/Pages/notas.html" class="card"><h3><span class="badge-icon">NO</span>Notas</h3><p>Calificaciones por periodo, asignatura y tipo de evaluación.</p></a>
+          <a href="Frontend/Pages/asistencia.html" class="card"><h3><span class="badge-icon">AS</span>Asistencia</h3><p>Registro diario por asignación y grupo.</p></a>
+          <a href="Frontend/Pages/matriculas.html" class="card"><h3><span class="badge-icon">MA</span>Matrículas</h3><p>Inscripción de estudiantes en cada grupo.</p></a>
+          <a href="Frontend/Pages/docentes.html" class="card"><h3><span class="badge-icon">DO</span>Docentes</h3><p>Datos de contacto y especialidad.</p></a>
+          <a href="Frontend/Pages/asignaciones.html" class="card"><h3><span class="badge-icon">AG</span>Asignaciones</h3><p>Quién enseña qué, a qué grupo y en qué horario.</p></a>
+          <a href="Frontend/Pages/academico.html" class="card"><h3><span class="badge-icon">AC</span>Gestión académica</h3><p>Grupos, asignaturas y periodos académicos.</p></a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© 2026 Gestión Academia</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <button class="chat-button" type="button" aria-label="Chat de ayuda, prototipo visual" title="Chat de ayuda">
+    <span class="chat-button-icon" aria-hidden="true">•••</span>
+  </button>
+
+</body>
+</html>

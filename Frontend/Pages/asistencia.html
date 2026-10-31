@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asistencia · Institución</title>
+  <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">I</span>
+        <span class="text brand-name">Institución</span>
+      </div>
+
+      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
+
+      <nav class="nav">
+        <a href="../../index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
+        <a href="estudiantes.html"><span class="icon">E</span><span class="text">Estudiantes</span></a>
+        <a href="docentes.html"><span class="icon">D</span><span class="text">Docentes</span></a>
+        <a href="matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
+        <a href="notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
+        <a href="asistencia.html" class="active"><span class="icon">A</span><span class="text">Asistencia</span></a>
+        <a href="asignaciones.html"><span class="icon">A</span><span class="text">Asignaciones</span></a>
+        <a href="academico.html"><span class="icon">G</span><span class="text">Gestión académica</span></a>
+        <a href="conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
+      </nav>
+
+      <div class="bottom">
+        <a href="../Auth/login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
+        <a href="../Auth/register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
+        <a href="../Auth/login.html" class="profile">
+          <span class="avatar">I</span>
+          <span class="text">
+            <strong>Invitado</strong><br>
+            <small>Login</small>
+          </span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="page-head">
+        <h1>Asistencia</h1>
+        <p class="subtitle">Marca la asistencia de cada estudiante en su asignación.</p>
+      </header>
+      <section class="panel">
+        <h2>Registro de asistencia</h2>
+        <form class="form-grid filters" action="#" method="get">
+          <label>Periodo
+            <select name="periodo">
+              <option>2026-1</option>
+              <option>2026-2</option>
+            </select>
+          </label>
+          <label>Grupo
+            <select name="grupo">
+              <option>Grupo 10A</option>
+              <option>Grupo 10B</option>
+              <option>Grupo 11A</option>
+            </select>
+          </label>
+          <label>Asignatura
+            <select name="asignatura">
+              <option>Matemáticas</option>
+              <option>Lengua castellana</option>
+              <option>Ciencias naturales</option>
+              <option>Inglés</option>
+            </select>
+          </label>
+          <div><button type="submit" class="button">Filtrar</button></div>
+        </form>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Fecha</th><th>Estudiante</th><th>Asignatura</th><th>Estado</th><th>Observación</th></tr></thead>
+            <tbody>
+            <tr><td>2026-03-02</td><td>Juan Pérez</td><td>Matemáticas</td><td><span class="badge ok">Presente</span></td><td>—</td></tr>
+            <tr><td>2026-03-02</td><td>María López</td><td>Matemáticas</td><td><span class="badge warn">Tarde</span></td><td>Llegó 10 min tarde</td></tr>
+            <tr><td>2026-03-02</td><td>Andrés Castaño</td><td>Matemáticas</td><td><span class="badge bad">Ausente</span></td><td>Sin justificación</td></tr>
+            <tr><td>2026-03-02</td><td>Sofía Mejía</td><td>Matemáticas</td><td><span class="badge warn">Excusa</span></td><td>Cita médica</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Registrar asistencia</h2>
+        <form class="form-grid" action="#" method="post">
+          <label>Estudiante (matrícula)
+            <select name="matricula">
+              <option>Juan Pérez</option>
+              <option>María López</option>
+              <option>Andrés Castaño</option>
+              <option>Sofía Mejía</option>
+            </select>
+          </label>
+          <label>Asignación
+            <select name="asignacion">
+              <option>Matemáticas · Grupo 10A · Laura Gómez</option>
+              <option>Inglés · Grupo 10A · Carlos Ríos</option>
+            </select>
+          </label>
+          <label>Fecha
+            <input type="date" name="fecha" placeholder="">
+          </label>
+          <label>Estado
+            <select name="estado">
+              <option>Presente</option>
+              <option>Ausente</option>
+              <option>Tarde</option>
+              <option>Excusa</option>
+            </select>
+          </label>
+          <label class="wide">Observación
+            <textarea name="observacion" rows="3" placeholder="Opcional"></textarea>
+          </label>
+          <div class="wide"><button type="submit" class="button">Guardar asistencia</button></div>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+
+  <button class="chat-button" type="button" aria-label="Chat de ayuda, prototipo visual" title="Chat de ayuda">
+    <span class="chat-button-icon" aria-hidden="true">•••</span>
+  </button>
+</body>
+</html>

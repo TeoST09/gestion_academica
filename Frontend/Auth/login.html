@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión · Institución</title>
+  <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">I</span>
+        <span class="text brand-name">Institución</span>
+      </div>
+
+      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
+
+      <nav class="nav">
+        <a href="../../index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
+        <a href="../Pages/estudiantes.html"><span class="icon">E</span><span class="text">Estudiantes</span></a>
+        <a href="../Pages/docentes.html"><span class="icon">D</span><span class="text">Docentes</span></a>
+        <a href="../Pages/matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
+        <a href="../Pages/notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
+        <a href="../Pages/asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
+        <a href="../Pages/asignaciones.html"><span class="icon">A</span><span class="text">Asignaciones</span></a>
+        <a href="../Pages/academico.html"><span class="icon">G</span><span class="text">Gestión académica</span></a>
+        <a href="../Pages/conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
+      </nav>
+
+      <div class="bottom">
+        <a href="login.html" class="nav-link active"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
+        <a href="register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
+        <a href="login.html" class="profile">
+          <span class="avatar">I</span>
+          <span class="text">
+            <strong>Invitado</strong><br>
+            <small>Login</small>
+          </span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main auth-main">
+      <section class="auth-box">
+        <h1>Iniciar sesión</h1>
+        <p class="subtitle">Ingresa con tu correo y contraseña.</p>
+        <form class="form-stack" action="#" method="post">
+          <label>Correo electrónico
+            <input type="email" name="email" placeholder="usuario@institucion.edu.co" required>
+          </label>
+          <label>Contraseña
+            <input type="password" name="contrasena" placeholder="Tu contraseña" required>
+          </label>
+          <label class="check"><input type="checkbox" name="recordarme"> Recordarme</label>
+          <a href="../../index.html" class="button button-full">Entrar</a>
+        </form>
+        <p class="auth-link">¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+      </section>
+
+    </main>
+  </div>
+
+
+  <button class="chat-button" type="button" aria-label="Chat de ayuda, prototipo visual" title="Chat de ayuda">
+    <span class="chat-button-icon" aria-hidden="true">•••</span>
+  </button>
+</body>
+</html>
