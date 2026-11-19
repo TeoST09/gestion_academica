@@ -9,14 +9,16 @@ La entrega está enfocada en la **estructura semántica HTML y su presentación 
 
 ## Vistas
 
-- [Página principal](./index.html): presentación, indicadores y accesos rápidos.
-- [Inicio](./Frontend/Pages/index.html): accesos a perfil y consultas académicas.
-- [Mi perfil](./Frontend/Pages/perfil.html), [matrículas](./Frontend/Pages/matriculas.html), [notas](./Frontend/Pages/notas.html), [asistencia](./Frontend/Pages/asistencia.html) y [horario](./Frontend/Pages/horario.html): consultas de solo lectura para usuarios.
+- [Inicio](./index.html): presentación, indicadores y accesos rápidos.
+- [Estudiantes](./Frontend/Pages/estudiantes.html): listado y formulario de datos personales y teléfonos.
+- [Docentes](./Frontend/Pages/docentes.html): listado y formulario de contacto y especialidad.
+- [Matrículas](./Frontend/Pages/matriculas.html): relación visual entre estudiante y grupo.
+- [Notas](./Frontend/Pages/notas.html): consulta y registro de calificaciones.
+- [Asistencia](./Frontend/Pages/asistencia.html): consulta y registro de estados de asistencia.
+- [Asignaciones](./Frontend/Pages/asignaciones.html): docente, asignatura, grupo, periodo y horario.
+- [Gestión académica](./Frontend/Pages/academico.html): grupos, asignaturas y periodos.
 - [Conócenos](./Frontend/Pages/conocenos.html): misión, visión y valores.
-- [Panel administrativo](./Frontend/Admin/admin.html): acceso a estudiantes, docentes, matrículas, notas, asistencia, asignaciones y gestión académica.
-- [Inicio de sesión](./Frontend/Auth/login.html) y [registro](./Frontend/Auth/register.html): vistas demostrativas.
-
-El login es únicamente una navegación de demostración: al enviar el formulario (con Enter o con el botón) abre el panel administrativo. No autentica usuarios ni protege las páginas.
+- [Inicio de sesión](./Frontend/Auth/login.html) y [registro](./Frontend/Auth/register.html): vistas de autenticación demostrativas.
 
 ## GitHub Pages
 

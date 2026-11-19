@@ -6,62 +6,40 @@
   <title>Iniciar sesión · Institución</title>
   <link rel="stylesheet" href="../Styles/style.css">
 </head>
-<body>
+<body class="google-login-page">
 
-  <div class="layout">
+  <main class="google-login-card" aria-labelledby="login-title">
+    <div class="google-login-eyebrow-row">
+      <a class="google-login-back" href="../Pages/index.html" aria-label="Volver al inicio">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m15 18-6-6 6-6M9 12h12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+      </a>
+      <p class="google-login-eyebrow">Acceso a tu cuenta</p>
+    </div>
+    <h1 id="login-title">¡Bienvenido de nuevo!</h1>
+    <p class="google-login-description">Ingresa con tu correo y contraseña.</p>
 
-    <aside class="sidebar">
-      <div class="brand">
-        <span class="logo">I</span>
-        <span class="text brand-name">Institución</span>
-      </div>
+    <form class="google-login-form" action="#" method="post">
+      <label for="email">Correo electrónico</label>
+      <input id="email" type="email" name="email" placeholder="usuario@institucion.edu.co" autocomplete="email" required>
 
-      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
+      <label for="password">Contraseña</label>
+      <input id="password" type="password" name="contrasena" placeholder="Tu contraseña" autocomplete="current-password" required>
 
-      <nav class="nav">
-        <a href="../Pages/index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
-        <a href="../Pages/matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
-        <a href="../Pages/notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
-        <a href="../Pages/asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
-        <a href="../Pages/horario.html"><span class="icon">H</span><span class="text">Horario</span></a>
-        <a href="../Pages/conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
-      </nav>
+      <label class="google-login-remember">
+        <input type="checkbox" name="recordarme">
+        <span>Recordarme</span>
+      </label>
 
-      <div class="bottom">
-        <a href="login.html" class="nav-link active"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
-        <a href="register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
-        <a href="../Pages/perfil.html" class="profile">
-          <span class="avatar">I</span>
-          <span class="text">
-            <strong>Invitado</strong><br>
-            <small>Login</small>
-          </span>
-        </a>
-      </div>
-    </aside>
+      <button class="google-login-submit" type="submit">Iniciar sesión</button>
+    </form>
 
-    <main class="main auth-main">
-      <section class="auth-box">
-        <h1>Iniciar sesión</h1>
-        <p class="subtitle">Ingresa con tu correo y contraseña.</p>
-        <form class="form-stack" action="#" method="post">
-          <label>Correo electrónico
-            <input type="email" name="email" placeholder="usuario@institucion.edu.co" required>
-          </label>
-          <label>Contraseña
-            <input type="password" name="contrasena" placeholder="Tu contraseña" required>
-          </label>
-          <label class="check"><input type="checkbox" name="recordarme"> Recordarme</label>
-          <button type="submit" class="button button-full">Entrar</button>
-        </form>
-        <p class="auth-link">¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
-      </section>
-
-    </main>
-  </div>
+    <p class="google-login-note">¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+  </main>
 
   <script>
-    document.querySelector(".form-stack").addEventListener("submit", function (event) {
+    document.querySelector(".google-login-form").addEventListener("submit", function (event) {
       event.preventDefault();
       window.location.assign("../Admin/admin.html");
     });
