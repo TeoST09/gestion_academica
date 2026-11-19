@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio · Institución</title>
+  <link rel="stylesheet" href="Frontend/Styles/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">I</span>
+        <span class="text brand-name">Institución</span>
+      </div>
+
+      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
+
+      <nav class="nav">
+        <a href="Frontend/Pages/index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
+        <a href="Frontend/Pages/matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
+        <a href="Frontend/Pages/notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
+        <a href="Frontend/Pages/asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
+        <a href="Frontend/Pages/horario.html"><span class="icon">H</span><span class="text">Horario</span></a>
+        <a href="Frontend/Pages/conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
+      </nav>
+
+      <div class="bottom">
+        <a href="Frontend/Auth/login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
+        <a href="Frontend/Auth/register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
+        <a href="Frontend/Pages/perfil.html" class="profile">
+          <span class="avatar">I</span>
+          <span class="text">
+            <strong>Invitado</strong><br>
+            <small>Login</small>
+          </span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main home-main">
+      <section id="inicio" class="hero">
+        <h1>Bienvenido a la Institución</h1>
+        <p class="subtitle">Consulta notas, asistencia y matrículas en un solo lugar. Una plataforma sencilla para estudiantes, docentes y administrativos.</p>
+        <a href="Frontend/Auth/login.html" class="button">Iniciar sesión</a>
+        <a href="Frontend/Auth/register.html" class="button button-light">Crear cuenta</a>
+      </section>
+
+      <section>
+        <div class="stats">
+          <div class="stat"><strong>1.250</strong><span>Estudiantes matriculados</span></div>
+          <div class="stat"><strong>64</strong><span>Docentes</span></div>
+          <div class="stat"><strong>32</strong><span>Grupos activos</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Accesos rápidos</h2>
+        <div class="cards">
+          <a href="Frontend/Pages/notas.html" class="card"><h3><span class="badge-icon">NO</span>Mis notas</h3><p>Consulta tus calificaciones por periodo y asignatura.</p></a>
+          <a href="Frontend/Pages/asistencia.html" class="card"><h3><span class="badge-icon">AS</span>Mi asistencia</h3><p>Consulta el registro de asistencia de tus clases.</p></a>
+          <a href="Frontend/Pages/matriculas.html" class="card"><h3><span class="badge-icon">MA</span>Matrículas</h3><p>Inscripción de estudiantes en cada grupo.</p></a>
+          <a href="Frontend/Pages/horario.html" class="card"><h3><span class="badge-icon">HO</span>Mi horario</h3><p>Consulta tus clases, asignaturas y docentes.</p></a>
+          <a href="Frontend/Pages/perfil.html" class="card"><h3><span class="badge-icon">PE</span>Mi perfil</h3><p>Consulta tus datos personales y de contacto.</p></a>
+          <a href="Frontend/Pages/index.html" class="card"><h3><span class="badge-icon">IN</span>Inicio</h3><p>Accede a tus consultas académicas.</p></a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© 2026 Gestión Academia</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <button class="chat-button" type="button" aria-label="Chat de ayuda, prototipo visual" title="Chat de ayuda">
+    <span class="chat-button-icon" aria-hidden="true">•••</span>
+  </button>
+
+</body>
+</html>
