@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asignaciones · Institución</title>
+  <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">I</span>
+        <span class="text brand-name">Institución</span>
+      </div>
+
+      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
+
+      <nav class="nav">
+        <a href="../../index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
+        <a href="estudiantes.html"><span class="icon">E</span><span class="text">Estudiantes</span></a>
+        <a href="docentes.html"><span class="icon">D</span><span class="text">Docentes</span></a>
+        <a href="matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
+        <a href="notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
+        <a href="asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
+        <a href="asignaciones.html" class="active"><span class="icon">A</span><span class="text">Asignaciones</span></a>
+        <a href="academico.html"><span class="icon">G</span><span class="text">Gestión académica</span></a>
+        <a href="conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
+      </nav>
+
+      <div class="bottom">
+        <a href="../Auth/login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
+        <a href="../Auth/register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
+        <a href="../Auth/login.html" class="profile">
+          <span class="avatar">I</span>
+          <span class="text">
+            <strong>Invitado</strong><br>
+            <small>Login</small>
+          </span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="page-head">
+        <h1>Asignaciones</h1>
+        <p class="subtitle">Define qué docente dicta cada asignatura, a qué grupo, en qué periodo y horario.</p>
+      </header>
+      <section class="panel">
+        <h2>Asignaciones del periodo</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Periodo</th><th>Grupo</th><th>Asignatura</th><th>Docente</th><th>Día</th><th>Horario</th></tr></thead>
+            <tbody>
+            <tr><td>1</td><td>2026-1</td><td>Grupo 10A</td><td>Matemáticas</td><td>Laura Gómez</td><td>Lunes</td><td>07:00 - 09:00</td></tr>
+            <tr><td>2</td><td>2026-1</td><td>Grupo 10A</td><td>Inglés</td><td>Carlos Ríos</td><td>Martes</td><td>09:00 - 11:00</td></tr>
+            <tr><td>3</td><td>2026-1</td><td>Grupo 10B</td><td>Ciencias naturales</td><td>Carlos Ríos</td><td>Miércoles</td><td>07:00 - 09:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Nueva asignación</h2>
+        <form class="form-grid" action="#" method="post">
+          <label>Periodo
+            <select name="periodo">
+              <option>2026-1</option>
+              <option>2026-2</option>
+            </select>
+          </label>
+          <label>Grupo
+            <select name="grupo">
+              <option>Grupo 10A</option>
+              <option>Grupo 10B</option>
+              <option>Grupo 11A</option>
+            </select>
+          </label>
+          <label>Asignatura
+            <select name="asignatura">
+              <option>Matemáticas</option>
+              <option>Lengua castellana</option>
+              <option>Ciencias naturales</option>
+              <option>Inglés</option>
+            </select>
+          </label>
+          <label>Docente
+            <select name="docente">
+              <option>Laura Gómez</option>
+              <option>Carlos Ríos</option>
+              <option>Marta Zapata</option>
+            </select>
+          </label>
+          <label>Día
+            <select name="dia">
+              <option>Lunes</option>
+              <option>Martes</option>
+              <option>Miércoles</option>
+              <option>Jueves</option>
+              <option>Viernes</option>
+            </select>
+          </label>
+          <label>Hora de inicio
+            <input type="time" name="hora_inicio" placeholder="">
+          </label>
+          <label>Hora de fin
+            <input type="time" name="hora_fin" placeholder="">
+          </label>
+          <div class="wide"><button type="submit" class="button">Crear asignación</button></div>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+
+  <button class="chat-button" type="button" aria-label="Chat de ayuda, prototipo visual" title="Chat de ayuda">
+    <span class="chat-button-icon" aria-hidden="true">•••</span>
+  </button>
+</body>
+</html>

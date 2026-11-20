@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matrículas · Institución</title>
+  <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">I</span>
+        <span class="text brand-name">Institución</span>
+      </div>
+
+      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
+
+      <nav class="nav">
+        <a href="../../index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
+        <a href="estudiantes.html"><span class="icon">E</span><span class="text">Estudiantes</span></a>
+        <a href="docentes.html"><span class="icon">D</span><span class="text">Docentes</span></a>
+        <a href="matriculas.html" class="active"><span class="icon">M</span><span class="text">Matrículas</span></a>
+        <a href="notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
+        <a href="asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
+        <a href="asignaciones.html"><span class="icon">A</span><span class="text">Asignaciones</span></a>
+        <a href="academico.html"><span class="icon">G</span><span class="text">Gestión académica</span></a>
+        <a href="conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
+      </nav>
+
+      <div class="bottom">
+        <a href="../Auth/login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
+        <a href="../Auth/register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
+        <a href="../Auth/login.html" class="profile">
+          <span class="avatar">I</span>
+          <span class="text">
+            <strong>Invitado</strong><br>
+            <small>Login</small>
+          </span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="page-head">
+        <h1>Matrículas</h1>
+        <p class="subtitle">Inscribe estudiantes en un grupo y controla el estado de su matrícula.</p>
+      </header>
+      <section class="panel">
+        <h2>Matrículas registradas</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Estudiante</th><th>Grupo</th><th>Fecha</th><th>Estado</th></tr></thead>
+            <tbody>
+            <tr><td>1</td><td>Juan Pérez</td><td>Grupo 10A</td><td>2026-01-20</td><td><span class="badge ok">Activa</span></td></tr>
+            <tr><td>2</td><td>María López</td><td>Grupo 10A</td><td>2026-01-20</td><td><span class="badge bad">Retirada</span></td></tr>
+            <tr><td>3</td><td>Andrés Castaño</td><td>Grupo 10B</td><td>2026-01-22</td><td><span class="badge warn">Pendiente</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Nueva matrícula</h2>
+        <form class="form-grid" action="#" method="post">
+          <label>Estudiante
+            <select name="estudiante">
+              <option>Juan Pérez</option>
+              <option>María López</option>
+              <option>Andrés Castaño</option>
+              <option>Sofía Mejía</option>
+            </select>
+          </label>
+          <label>Grupo
+            <select name="grupo">
+              <option>Grupo 10A</option>
+              <option>Grupo 10B</option>
+              <option>Grupo 11A</option>
+            </select>
+          </label>
+          <label>Fecha de matrícula
+            <input type="date" name="fecha_matricula" placeholder="">
+          </label>
+          <label>Estado
+            <select name="estado">
+              <option>Activa</option>
+              <option>Pendiente</option>
+              <option>Retirado</option>
+            </select>
+          </label>
+          <div class="wide"><button type="submit" class="button">Matricular</button></div>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+
+  <button class="chat-button" type="button" aria-label="Chat de ayuda, prototipo visual" title="Chat de ayuda">
+    <span class="chat-button-icon" aria-hidden="true">•••</span>
+  </button>
+</body>
+</html>
