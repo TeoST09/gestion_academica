@@ -3,81 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Inicio · Institución</title>
+  <meta name="description" content="Conoce el portal académico de nuestra institución educativa.">
+  <title>Portal Institucional · Bienvenidos</title>
   <link rel="stylesheet" href="Frontend/Styles/style.css">
 </head>
-<body>
+<body class="landing-page">
 
-  <div class="layout">
+  <header class="landing-header">
+    <a class="landing-brand" href="#introduccion" aria-label="Portal Institucional, inicio">
+      <span class="landing-brand-mark" aria-hidden="true">P</span>
+      <span>Portal <strong>Institucional</strong></span>
+    </a>
+    <nav class="landing-nav" aria-label="Navegación principal">
+      <a href="#introduccion">Introducción</a>
+      <a href="#conocenos">Conócenos</a>
+    </nav>
+    <div class="landing-actions">
+      <a class="landing-login-link" href="Frontend/Auth/login.html">Iniciar sesión</a>
+      <a class="landing-action-button" href="Frontend/Auth/register.html">Crear cuenta</a>
+    </div>
+  </header>
 
-    <aside class="sidebar">
-      <div class="brand">
-        <span class="logo">I</span>
-        <span class="text brand-name">Institución</span>
+  <main>
+    <section class="landing-hero" id="introduccion">
+      <div class="landing-hero-copy">
+        <p class="landing-kicker"><span></span> El espacio académico de nuestra comunidad</p>
+        <h1>Una comunidad educativa, <span>conectada en un solo lugar.</span></h1>
+        <p class="landing-intro">Este es el portal de nuestra institución: un espacio para que estudiantes, docentes y equipo administrativo consulten y organicen la vida académica de nuestro colegio.</p>
+        <div class="landing-hero-actions">
+          <a class="landing-action-button" href="#conocenos">Conócenos <span aria-hidden="true">→</span></a>
+          <a class="landing-secondary-link" href="Frontend/Auth/login.html">Explorar mi espacio</a>
+        </div>
+        <p class="landing-caption">Al servicio de quienes forman parte de nuestra institución.</p>
       </div>
 
-      <input class="search" type="search" name="busqueda" placeholder="Buscar...">
-
-      <nav class="nav">
-        <a href="Frontend/Pages/index.html"><span class="icon">I</span><span class="text">Inicio</span></a>
-        <a href="Frontend/Pages/matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
-        <a href="Frontend/Pages/notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
-        <a href="Frontend/Pages/asistencia.html"><span class="icon">A</span><span class="text">Asistencia</span></a>
-        <a href="Frontend/Pages/horario.html"><span class="icon">H</span><span class="text">Horario</span></a>
-        <a href="Frontend/Pages/conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
-      </nav>
-
-      <div class="bottom">
-        <a href="Frontend/Auth/login.html" class="nav-link"><span class="icon">I</span><span class="text">Iniciar sesión</span></a>
-        <a href="Frontend/Auth/register.html" class="nav-link"><span class="icon">R</span><span class="text">Registrarse</span></a>
-        <a href="Frontend/Pages/perfil.html" class="profile">
-          <span class="avatar">I</span>
-          <span class="text">
-            <strong>Invitado</strong><br>
-            <small>Login</small>
-          </span>
-        </a>
+      <div class="landing-visual" aria-label="Resumen de las herramientas académicas">
+        <div class="landing-visual-glow"></div>
+        <div class="landing-preview-card">
+          <div class="landing-preview-top">
+            <span class="landing-preview-logo">P</span>
+            <span class="landing-preview-label">Portal de nuestra institución</span>
+            <span class="landing-preview-dots" aria-hidden="true">•••</span>
+          </div>
+          <div class="landing-preview-welcome">
+            <span>BIENVENIDOS A NUESTRA INSTITUCIÓN</span>
+            <strong>La vida académica<br>de nuestra comunidad.</strong>
+          </div>
+          <div class="landing-preview-list">
+            <div><span class="landing-preview-icon lavender">M</span><span><strong>Matrículas</strong><small>Organiza tu proceso académico</small></span><b>↗</b></div>
+            <div><span class="landing-preview-icon mint">N</span><span><strong>Notas</strong><small>Sigue tus avances y logros</small></span><b>↗</b></div>
+            <div><span class="landing-preview-icon peach">A</span><span><strong>Asistencia</strong><small>Mantente al día con tus clases</small></span><b>↗</b></div>
+          </div>
+          <div class="landing-preview-footer"><span></span> Aprender, crecer y avanzar juntos</div>
+        </div>
+        <div class="landing-floating-note"><span>✦</span> Nuestra comunidad, siempre conectada</div>
       </div>
-    </aside>
+    </section>
 
-    <main class="main home-main">
-      <section id="inicio" class="hero">
-        <h1>Bienvenido a la Institución</h1>
-        <p class="subtitle">Consulta notas, asistencia y matrículas en un solo lugar. Una plataforma sencilla para estudiantes, docentes y administrativos.</p>
-        <a href="Frontend/Auth/login.html" class="button">Iniciar sesión</a>
-        <a href="Frontend/Auth/register.html" class="button button-light">Crear cuenta</a>
-      </section>
-
-      <section>
-        <div class="stats">
-          <div class="stat"><strong>1.250</strong><span>Estudiantes matriculados</span></div>
-          <div class="stat"><strong>64</strong><span>Docentes</span></div>
-          <div class="stat"><strong>32</strong><span>Grupos activos</span></div>
+    <section class="landing-about" id="conocenos">
+      <div class="landing-about-inner">
+        <div class="landing-about-heading">
+          <p class="landing-section-kicker">Conócenos</p>
+          <h2>Una comunidad que aprende y crece <span>en conjunto.</span></h2>
+          <p>Somos una comunidad educativa que trabaja para que la experiencia académica de nuestro colegio sea cercana, ordenada y útil para cada estudiante, docente y familia.</p>
         </div>
-      </section>
-
-      <section>
-        <h2>Accesos rápidos</h2>
-        <div class="cards">
-          <a href="Frontend/Pages/notas.html" class="card"><h3><span class="badge-icon">NO</span>Mis notas</h3><p>Consulta tus calificaciones por periodo y asignatura.</p></a>
-          <a href="Frontend/Pages/asistencia.html" class="card"><h3><span class="badge-icon">AS</span>Mi asistencia</h3><p>Consulta el registro de asistencia de tus clases.</p></a>
-          <a href="Frontend/Pages/matriculas.html" class="card"><h3><span class="badge-icon">MA</span>Matrículas</h3><p>Inscripción de estudiantes en cada grupo.</p></a>
-          <a href="Frontend/Pages/horario.html" class="card"><h3><span class="badge-icon">HO</span>Mi horario</h3><p>Consulta tus clases, asignaturas y docentes.</p></a>
-          <a href="Frontend/Pages/perfil.html" class="card"><h3><span class="badge-icon">PE</span>Mi perfil</h3><p>Consulta tus datos personales y de contacto.</p></a>
-          <a href="Frontend/Pages/index.html" class="card"><h3><span class="badge-icon">IN</span>Inicio</h3><p>Accede a tus consultas académicas.</p></a>
+        <div class="landing-about-cards">
+          <article class="landing-about-card">
+            <span class="landing-about-number">01</span>
+            <h3>Lo que hacemos</h3>
+            <p>Reunimos en un solo portal la información y los procesos académicos de estudiantes, docentes y equipo administrativo de nuestra institución.</p>
+          </article>
+          <article class="landing-about-card landing-about-card-featured">
+            <span class="landing-about-number">02</span>
+            <h3>Nuestra visión</h3>
+            <p>Ser una institución educativa cercana e innovadora, donde nuestra comunidad cuente con herramientas claras para aprender y alcanzar sus metas.</p>
+          </article>
+          <article class="landing-about-card">
+            <span class="landing-about-number">03</span>
+            <h3>Nuestro compromiso</h3>
+            <p>Acompañar a quienes hacen parte de nuestro colegio con información clara, responsabilidad y compromiso con el aprendizaje.</p>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <footer class="footer">
-        <p>© 2026 Gestión Academia</p>
-      </footer>
-
-    </main>
-  </div>
-
-  <button class="chat-button" type="button" aria-label="Chat de ayuda, prototipo visual" title="Chat de ayuda">
-    <span class="chat-button-icon" aria-hidden="true">•••</span>
-  </button>
+  <footer class="landing-footer">
+    <a class="landing-brand" href="#introduccion">
+      <span class="landing-brand-mark" aria-hidden="true">P</span>
+      <span>Portal <strong>Institucional</strong></span>
+    </a>
+    <p>© 2026 Portal Institucional · Aprendemos y avanzamos juntos.</p>
+  </footer>
 
 </body>
 </html>

@@ -10,7 +10,7 @@
 
   <main class="google-login-card" aria-labelledby="login-title">
     <div class="google-login-eyebrow-row">
-      <a class="google-login-back" href="../Pages/index.html" aria-label="Volver al inicio">
+      <a class="google-login-back" href="../../index.html" aria-label="Volver al inicio">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="m15 18-6-6 6-6M9 12h12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </svg>
@@ -18,9 +18,16 @@
       <p class="google-login-eyebrow">Acceso a tu cuenta</p>
     </div>
     <h1 id="login-title">¡Bienvenido de nuevo!</h1>
-    <p class="google-login-description">Ingresa con tu correo y contraseña.</p>
+    <p class="google-login-description">Ingresa con tu correo y contraseña y elige tu espacio.</p>
 
     <form class="google-login-form" action="#" method="post">
+      <label for="role">Tipo de acceso</label>
+      <select id="role" name="role" required>
+        <option value="" selected disabled>Selecciona tu perfil</option>
+        <option value="user">Usuario</option>
+        <option value="admin">Administrador</option>
+      </select>
+
       <label for="email">Correo electrónico</label>
       <input id="email" type="email" name="email" placeholder="usuario@institucion.edu.co" autocomplete="email" required>
 
@@ -41,7 +48,10 @@
   <script>
     document.querySelector(".google-login-form").addEventListener("submit", function (event) {
       event.preventDefault();
-      window.location.assign("../Admin/admin.html");
+      const destination = this.elements.role.value === "admin"
+        ? "../Admin/admin.html"
+        : "../Pages/index.html";
+      window.location.assign(destination);
     });
   </script>
 

@@ -3,22 +3,20 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Proyecto de **Introducción a la Programación — Segundo momento**. Presenta la capa visual de una aplicación académica para organizar y consultar información de estudiantes, docentes, matrículas, notas y asistencia.
+Proyecto de **Introducción a la Programación — Segundo momento**. Presenta la capa visual de un portal académico para una institución educativa, con vistas para consultar información de estudiantes, docentes, matrículas, notas y asistencia.
 
-La entrega está enfocada en la **estructura semántica HTML y su presentación con CSS puro**, de acuerdo con la guía del proyecto. Es un prototipo visual: no utiliza JavaScript, frameworks, backend ni base de datos. Los formularios, filtros y datos de las tablas son demostrativos y no guardan ni consultan información.
+La entrega está enfocada en la **estructura semántica HTML y su presentación con CSS puro**, de acuerdo con la guía del proyecto. Es un prototipo visual que usa JavaScript únicamente para la navegación demostrativa; no utiliza frameworks, backend ni base de datos. Los formularios, filtros y datos de las tablas no guardan ni consultan información.
 
 ## Vistas
 
-- [Inicio](./index.html): presentación, indicadores y accesos rápidos.
-- [Estudiantes](./Frontend/Pages/estudiantes.html): listado y formulario de datos personales y teléfonos.
-- [Docentes](./Frontend/Pages/docentes.html): listado y formulario de contacto y especialidad.
-- [Matrículas](./Frontend/Pages/matriculas.html): relación visual entre estudiante y grupo.
-- [Notas](./Frontend/Pages/notas.html): consulta y registro de calificaciones.
-- [Asistencia](./Frontend/Pages/asistencia.html): consulta y registro de estados de asistencia.
-- [Asignaciones](./Frontend/Pages/asignaciones.html): docente, asignatura, grupo, periodo y horario.
-- [Gestión académica](./Frontend/Pages/academico.html): grupos, asignaturas y periodos.
+- [Página principal](./index.html): bienvenida al portal de una institución educativa, introducción y visión institucional.
+- [Inicio](./Frontend/Pages/index.html): accesos a perfil y consultas académicas.
+- [Mi perfil](./Frontend/Pages/perfil.html), [matrículas](./Frontend/Pages/matriculas.html), [notas](./Frontend/Pages/notas.html), [asistencia](./Frontend/Pages/asistencia.html) y [horario](./Frontend/Pages/horario.html): consultas de solo lectura para usuarios.
 - [Conócenos](./Frontend/Pages/conocenos.html): misión, visión y valores.
-- [Inicio de sesión](./Frontend/Auth/login.html) y [registro](./Frontend/Auth/register.html): vistas de autenticación demostrativas.
+- [Panel administrativo](./Frontend/Admin/admin.html): acceso a estudiantes, docentes, matrículas, notas, asistencia, asignaciones y gestión académica.
+- [Inicio de sesión](./Frontend/Auth/login.html) y [registro](./Frontend/Auth/register.html): vistas demostrativas.
+
+El registro lleva a la vista de inicio de usuario. El login permite elegir entre Usuario y Administrador y abre la vista correspondiente como demostración. No hay autenticación real ni protección de las páginas.
 
 ## GitHub Pages
 

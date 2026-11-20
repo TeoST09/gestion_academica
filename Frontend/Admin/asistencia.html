@@ -6,7 +6,7 @@
   <title>Asistencia · Institución</title>
   <link rel="stylesheet" href="../Styles/style.css">
 </head>
-<body>
+<body class="admin-page">
 
   <div class="layout">
 
@@ -19,19 +19,19 @@
       <input class="search" type="search" name="busqueda" placeholder="Buscar...">
 
       <nav class="nav">
-        <a href="admin.html"><span class="icon">P</span><span class="text">Panel administrativo</span></a>
-        <a href="estudiantes.html"><span class="icon">E</span><span class="text">Estudiantes</span></a>
-        <a href="docentes.html"><span class="icon">D</span><span class="text">Docentes</span></a>
-        <a href="matriculas.html"><span class="icon">M</span><span class="text">Matrículas</span></a>
-        <a href="notas.html"><span class="icon">N</span><span class="text">Notas</span></a>
-        <a href="asistencia.html" class="active"><span class="icon">A</span><span class="text">Asistencia</span></a>
-        <a href="asignaciones.html"><span class="icon">A</span><span class="text">Asignaciones</span></a>
-        <a href="academico.html"><span class="icon">G</span><span class="text">Gestión académica</span></a>
-        <a href="conocenos.html"><span class="icon">C</span><span class="text">Conócenos</span></a>
+        <a href="admin.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="5" rx="1.5"/><rect x="13" y="10" width="8" height="11" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></svg></span><span class="text">Panel administrativo</span></a>
+        <a href="estudiantes.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1zM16 5.5a3 3 0 0 1 0 5.8M18 14a5 5 0 0 1 3 4.6V20h-3"/></svg></span><span class="text">Estudiantes</span></a>
+        <a href="docentes.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM17 11l2 2 3-3"/></svg></span><span class="text">Docentes</span></a>
+        <a href="matriculas.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M6 3h9l4 4v14H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v5h5M8 13h8M8 17h8"/></svg></span><span class="text">Matrículas</span></a>
+        <a href="notas.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><span class="text">Notas</span></a>
+        <a href="asistencia.html" class="active"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18m-13 5 2 2 4-4"/></svg></span><span class="text">Asistencia</span></a>
+        <a href="asignaciones.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M8 5H5a2 2 0 0 0-2 2v13h14v-3M9 3h6v4H9zM12 14h9M17 10l4 4-4 4"/></svg></span><span class="text">Asignaciones</span></a>
+        <a href="academico.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v17H6a2 2 0 0 1-2-2zM4 5v13M8 7h7M8 11h7"/></svg></span><span class="text">Gestión académica</span></a>
+        <a href="conocenos.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1zM16 5.5a3 3 0 0 1 0 5.8M18 14a5 5 0 0 1 3 4.6V20h-3"/></svg></span><span class="text">Conócenos</span></a>
       </nav>
 
       <div class="bottom">
-        <a href="../Auth/login.html" class="nav-link"><span class="icon">S</span><span class="text">Cerrar sesión</span></a>
+        <a href="../Auth/login.html" class="nav-link"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M14 17l5-5-5-5M19 12H7M3 19V5a2 2 0 0 1 2-2h5"/></svg></span><span class="text">Cerrar sesión</span></a>
         <a href="admin.html" class="profile">
           <span class="avatar">A</span>
           <span class="text">
